@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<title>Contacto - El Centollo</title>
+
+<link rel="stylesheet" href="css/estilos.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
+
+<style>
+
+/* CUADRO BEIGE */
+.cubo-contacto {
+  background-color: #f5f0e6;
+  width: 80%;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  font-family: Arial, sans-serif;
+}
+
+.columna {
+  width: 48%;
+  text-align: left;
+}
+
+.cubo-contacto h2 {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* FOOTER */
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+footer img {
+  width: 120px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <img src="img/logo.png" class="logo">
+    <h1>Restaurante El Centollo</h1>
+</header>
+
+<!-- NAV -->
+<nav class="nav">
+    <a href="index.html">Inicio</a>
+    <a href="menu.html">Menú</a>
+    <a href="contacto.html">Contáctanos</a>
+    <a href="ubicacion.html">Ubicación</a>
+    <a href="reservas.html">Reservas</a>
+    <a href="integrantes.html">Integrantes</a>
+</nav>
+
+<!-- CUADRO BEIGE -->
+<div class="cubo-contacto">
+
+    <h2>Atención al Cliente</h2>
+
+    <div class="columna">
+        <p><strong>Horario:</strong></p>
+        <p>Lunes a viernes: 8:00 a.m. - 2:00 p.m.</p>
+        <p>Domingos y festivos: Cerrado</p>
+    </div>
+
+    <div class="columna">
+        <p><strong>Datos de contacto:</strong></p>
+        <p><strong>Dirección:</strong> Colegio CEDID</p>
+        <p><strong>Teléfono:</strong> 915331576</p>
+        <p><strong>Fax:</strong> 915337736</p>
+        <p><strong>Correo:</strong> centollo@gmail.com</p>
+    </div>
+
+</div>
+
+<!-- FOOTER CON QR -->
+<footer>
+
+<div class="logos">
+    <img src="img/logo2.jpg">
+    <img src="img/logo3.jpg">
+    <img src="img/logo4.jpg">
+    <img src="img/logo5.jpg">
+    <img src="img/logo6.jpg">
+</div>
+ <img src="img/codigo.png" class="codigo">
+
+<p>Yesica Jimena López – Isabella Sarmiento Piñeros</p>
+<p>📧 centollo@gmail.com</p>
+
+<div class="redes">
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-whatsapp"></i></a>
+</div>
+
+</footer>
+<script>
+document.getElementById("fecha").textContent =
+"Fecha: " + new Date().toLocaleDateString();
+</script>
+
+</body>
+</html>

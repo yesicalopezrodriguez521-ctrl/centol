@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reservas - El Centollo</title>
+
+<style>
+
+/* GENERAL */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+}
+
+/* HEADER */
+header {
+  background: white;
+  text-align: center;
+  padding: 20px;
+}
+
+header img {
+  width: 200px;
+}
+
+/* NAV (BOTONES) */
+nav {
+  background: black;
+  text-align: center;
+  padding: 12px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+nav a:hover {
+  background: #333;
+}
+
+/* TITULO */
+h2 {
+  text-align: center;
+  margin-top: 20px;
+  color: #003049;
+}
+
+/* FORMULARIO */
+.formulario {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+iframe {
+  border: none;
+  width: 90%;
+  max-width: 900px;
+  height: 900px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* FOOTER */
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+footer img {
+  width: 120px;
+  margin-top: 10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <img src="img/logo.png" alt="El Centollo">
+</header>
+
+<!-- NAV (BOTONES) -->
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="menu.html">Menú</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="ubicacion.html">Ubicación</a>
+    <a href="reservas.html">Reservas</a>
+    <a href="integrantes.html">Integrantes</a>
+</nav>
+
+<!-- TITULO -->
+<h2>🍽️ Reservas del Restaurante</h2>
+
+<!-- FORMULARIO GOOGLE -->
+<div class="formulario">
+  <iframe 
+    src="https://docs.google.com/forms/d/e/1FAIpQLSdoYqfL30ZMAWsLR40xj4TvsHqlwpOioPVRQPGO9fJ1UP2reA/viewform?embedded=true">
+  </iframe>
+</div>
+
+<!-- FOOTER -->
+<footer>
+
+<div class="logos">
+    <img src="img/logo2.jpg">
+    <img src="img/logo3.jpg">
+    <img src="img/logo4.jpg">
+    <img src="img/logo5.jpg">
+    <img src="img/logo6.jpg">
+</div>
+<img src="img/codigo2.png" alt="codigo2">
+<p>Yesica Jimena López – Isabella Sarmiento Piñeros</p>
+<p>📧 centollo@gmail.com</p>
+
+<div class="redes">
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-whatsapp"></i></a>
+</div>
+
+</footer>
+<!-- MODAL PROMOCIÓN --> <div id="modalPromo" class="modal"> <div class="modal-contenido"> <span class="cerrar">&times;</span> <h2>🎉 PROMOCIÓN ESPECIAL 🎉</h2> <img src="img/PULPIN.JPG" alt="Promoción" class="img-promo"> <p> ¡Bienvenido a <strong>El Centollo</strong>! Esta semana disfruta de un <strong>20% de descuento</strong> en nuestros platos seleccionados. </p> <button id="cerrarBtn">Cerrar</button> </div> </div> <!-- FOOTER --> <footer class="footer-simple"> <h3>El Centollo</h3> <p>📞 34444444</p> <p>© 2026 - Todos los derechos reservados</p> </footer> <script src="js/slider.js"></script> <script> const modal = document.getElementById("modalPromo"); const cerrar = document.querySelector(".cerrar"); const cerrarBtn = document.getElementById("cerrarBtn"); cerrar.onclick = function(){ modal.style.display = "none"; } 
+
+</body>
+</html>
